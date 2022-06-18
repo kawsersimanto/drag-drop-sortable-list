@@ -1,0 +1,37 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.number{
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+}
+
+.person-name{
+  margin: 0 20px 0 0;
+}
+
+.draggable-list li{
+  background-color: white;
+  backdrop-filter: blur(40px);
+  flex: 1;
+  transition: all .3s ease 0s;
+}
+
+.draggable-list li:not(:last-of-type){
+  border-bottom: 1px solid #dee2e6;
+}
+
+.draggable-list li.over .draggable{
+  background-color: #eaeaea;
+}
+
+.draggable{
+  padding: 15px 30px;
+  cursor: pointer;
+  flex: 1;
+}
